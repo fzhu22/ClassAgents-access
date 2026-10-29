@@ -1,0 +1,17 @@
+name: Request pilot access
+description: Ask to try the ClassAgents Windows app
+title: "[Access] ClassAgents pilot"
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: "Your GitHub account will identify you. This request is public. Do not include an email, school ID, course material, password or key."
+  - type: checkboxes
+    id: pilot
+    attributes:
+      label: Pilot access
+      options:
+        - label: I want access for this GitHub account and understand this is an unsigned Windows x64 pilot.
+          required: true
+        - label: I understand my username and this request will be public.
+          required: true
